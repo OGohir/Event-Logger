@@ -1,0 +1,17 @@
+import java.io.Serializable;
+
+public class Event implements Serializable
+{
+    String description;
+    int time;
+    
+    Event(String description, int time){
+        this.description = description;
+        this.time = time;
+    }
+    
+    public String toString(){
+        return "Description: " + description +
+            "\nTime: " + time;
+    }
+}
